@@ -1,22 +1,39 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-
-	<!--/ /---- Put your name in the title of the page ----/ /-->
-	<title>Subham's Portfolio</title>
-	
-	<!--/ /-------- Normalize CSS --------/ /-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	
-	<!--/ /-------- Google Fonts --------/ /-->
-	<!-- Add a link to google fonts here if you want them -->
-	
-	<!--/ /-------- Font Awesome --------/ /-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-	<!--/ /-------- Your Styles --------/ /-->
-	<link href="styles.css" rel="stylesheet">
-
-	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
-	<meta description="Subham's portfolio showcasing
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+    .image-container {
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <h1>Here’s a Cute Cat!</h1>
+    <img src="https://rqtplocwomfwxmxgbqsj.supabase.co/storage/v1/object/public/imgs2/cat.jpeg" alt="A cute cat">
+  </div>
+</body>
+</html>
