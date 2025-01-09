@@ -3,37 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Viewer</title>
+  <title>My Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* General Reset */
+    * {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f3f3f3;
+      box-sizing: border-box;
     }
-    .image-container {
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
       text-align: center;
+      padding: 20px 0;
     }
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 10px;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .profile-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .profile-section img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #555;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    h1 {
+
+    .profile-section h2 {
+      margin-top: 20px;
+      font-size: 1.8rem;
+    }
+
+    .profile-section p {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .section {
+      margin: 40px 20px;
+    }
+
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .section p {
+      text-align: center;
       margin-bottom: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .project-card h4 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .footer p {
+      font-size: 1rem;
+    }
+
+    a {
       color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="image-container">
-    <h1>Here’s a Cute Cat!</h1>
-    <img src="https://rqtplocwomfwxmxgbqsj.supabase.co/storage/v1/object/public/imgs2/cat.jpeg" alt="A cute cat">
+
+<header>
+  <h1>Welcome to My Portfolio</h1>
+  <p>Hi! I'm Subham, a passionate software developer and AI enthusiast.</p>
+</header>
+
+<section class="profile-section">
+  <img src="https://rqtplocwomfwxmxgbqsj.supabase.co/storage/v1/object/public/imgs2/cat.jpeg" alt="Profile Picture">
+  <h2>Subham</h2>
+  <p>Computer Science Engineering Student | Aspiring Developer | AI Enthusiast</p>
+</section>
+
+<section class="section about">
+  <h3>About Me</h3>
+  <p>I am a final-year Computer Science Engineering student at PES University, Bangalore, India. I am deeply passionate about artificial intelligence, machine learning, and solving real-world problems through technology.</p>
+</section>
+
+<section class="section projects">
+  <h3>My Projects</h3>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 1">
+      <h4>Muni - AI Medical Adherence App</h4>
+      <p>An AI-driven app to help patients manage chronic illnesses. Won 3rd place at PennApps Hackathon.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 2">
+      <h4>Inline Packet Processing</h4>
+      <p>A software solution using DPDK to detect and respond to DoS attacks in real time.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 3">
+      <h4>Cover Letter AI Generator</h4>
+      <p>A tool to generate professional cover letters and cold emails using AI.</p>
+    </div>
   </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Subham. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
